@@ -1,0 +1,87 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #0A143A; /*text color: #0A143A*/
+}
+
+.header {
+    max-width: 1146px; /*max width of header*/
+    margin: auto; /*automatic mid-alignment (автоматическое выравнивание по середине)*/
+    margin-top: 30px;
+}
+
+.navbar {
+    display: flex; /*do flexible block (делаем гибкий блок)*/
+    align-items: center; /*Align vertically to center (выравниваем по вертикали по центру)*/
+    justify-content: space-between; /*scatter (разбросать) elements around edges (разбросать элементы по краям)*/
+    margin-bottom: 24px;
+}
+
+.navbar-menu {
+    margin-right: auto; /*automatic indentation to the right of the logo(автоматический отступ справа от логотипа)*/
+}
+
+.menu {
+    list-style: none; /*clean up points in the list(убираем точки в списке)*/
+    margin: 0; /*reset (обнулить) indentations*/
+    padding-left: 20px; /*internal left indent (внутренний отступ слева)*/
+    padding-right: 20px; /*internal right indent*/
+    display: flex; /*do flexible menu items*/
+}
+
+/*for all items of menu except the last one*/
+.menu-item:not(:last-child) {
+    margin-right: 14px; /*each item push the next one to the right by 14px*/
+}
+
+.menu-link {
+    text-decoration: none; /*[shortcut tdn + TAB] removing underlines*/
+    color: inherit; /*immitate the parent's color (body)*/
+}
+
+.button {
+    text-decoration: none;
+    display: inline-block; /*?????????*/
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.button-link {
+    color: inherit;
+}
+
+.button-primary {
+    background: #256EEB; 
+    border-radius: 5px;
+    color:white;
+}
+
+.search-panel {
+    height: 50px;
+    background: #256EEB; 
+    border-radius: 5px;
+    display: flex;
+    padding: 3px;
+}
+
+.search-input {
+    flex-grow: 1; /*рястягивается на все свободное место*/
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 0 22px;
+    border: none;
+}
+
+.search-button {
+    background: #256EEB; 
+    border: none;
+    color:white;
+    padding: 16px 17px 15px 20px; /*20px - 3px(внутрненний отступ справа .search-panel на 64 строке кода)=17px*/
+    display: flex;
+    align-items: center; /*80 и 81 строки кода для того, чтобы иконка и текст были на одном уровне*/
+}
+
+.search-buttont-text {
+    margin-left: 5px;
+}
+
